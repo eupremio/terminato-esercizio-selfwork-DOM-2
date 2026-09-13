@@ -1,0 +1,34 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.titleInput,
+.paragraph {
+    font-size: 18px;
+}
+
+.input,
+.button {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    font-size: 18px;
+    box-shadow: 0 2px 5px green;
+    border: none;
+    outline: none;
+}
+
+.button {
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #003700;
+    color: white;
+}
+
+.article {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+}
