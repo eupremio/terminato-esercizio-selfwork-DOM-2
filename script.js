@@ -1,8 +1,10 @@
-const input = document.getElementById("input");
-const textArea = document.getElementById("textArea");
-const button = document.getElementById("button");
+const input = document.querySelector("#input");
+const textArea = document.querySelector("#textArea");
+const button = document.querySelector("#button");
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
+    e.preventDefault()
+    const deta = new Date().toLocaleDateString()
 
     if (input.value === "" || textArea.value === "") {
         alert("Titolo o paragrafo vuoti");
@@ -18,7 +20,12 @@ button.addEventListener("click", () => {
     const p = document.createElement("p");
     p.textContent = textArea.value;
 
-    article.append(h1, p);
+    const span = document.createElement("span")
+    span.textContent = deta
+    console.log( deta );
+
+
+    article.append(h1, p, span);
 
     document.body.append(article);
 
